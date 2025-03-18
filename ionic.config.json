@@ -1,0 +1,7 @@
+{
+  "name": "EPOC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
