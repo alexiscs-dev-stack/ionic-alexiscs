@@ -13,6 +13,6 @@ bootstrapApplication(AppComponent, {
     provideHttpClient(),
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
-});
+}).catch(err => console.error(err));
 
 //custom providers Firebase, Auth, Storage (Web or Mobile)

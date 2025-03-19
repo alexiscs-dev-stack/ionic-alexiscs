@@ -3,12 +3,12 @@ import { RecipeListComponent } from './recipes/components/recipe-list.component'
 
 export const routes: Routes = [
   {
-    path: 'home',
+    path: 'recipes',
     component: RecipeListComponent,
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'recipes',
     pathMatch: 'full',
   },
 ];

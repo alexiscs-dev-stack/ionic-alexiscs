@@ -1,14 +1,10 @@
-
-  <ion-searchbar
-    placeholder="Search.."
-    (ionChange)="onSearchChange($event.detail.value)"
-  >
+<ion-content>
+  <ion-searchbar placeholder="Search recipe.." [ngModel]="searchTerm" (ngModelChange)="onSearchChange($event)">
   </ion-searchbar>
 
+
   <ion-list>
-    <ion-card
-      ng*For="let recipe of filteredRecipes$ | async trackBy: trackByRecipe"
-    >
+    <ion-card *ngFor="let recipe of filteredRecipes$ | async trackBy: trackByRecipe">
       <img [src]="recipe.image" alt="{{ recipe.title }}" />
       <ion-card-header>
         <ion-card-title> {{ recipe.title }}</ion-card-title>

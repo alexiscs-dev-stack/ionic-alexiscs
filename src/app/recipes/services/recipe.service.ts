@@ -7,12 +7,12 @@ import { Recipe } from "../models/recipes.model";
     providedIn: "root"
 })
 export class RecipeService {
-    private recipesUrl = "../../assets/recipes.json";
+    private readonly recipesUrl = "../../assets/recipes.json";
 
     constructor(private http:HttpClient){
         //initialize
     }
-    
+
     //pend subscriptions and ionic lifeCycles
     getRecipes(): Observable<Recipe[]> {
         return this.http.get<Recipe[]>(this.recipesUrl);
