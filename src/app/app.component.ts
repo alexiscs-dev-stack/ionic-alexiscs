@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { RecipeListComponent } from './recipes/components/recipe-list.component';
 
 @Component({
   selector: 'app-root',
